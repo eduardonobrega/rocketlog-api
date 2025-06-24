@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "ES2023", // versão do JavaScript gerado
+        "lib": ["ES2023"], // bibliotecas padrão disponíveis
+
+        "paths": {
+            "@/*": ["./src/*"]
+        },
+
+        // Módulo
+        "module": "nodenext", // sistema de módulos compatível com Node moderno
+        "esModuleInterop": true, // permite importar módulos CommonJS com `import`
+        "forceConsistentCasingInFileNames": true, // obriga consistência entre maiúsculas/minúsculas nos nomes dos arquivos
+        "isolatedModules": true,
+
+        // Verificação de tipos
+        "strict": true, // ativa todas as verificações rigorosas de tipo
+        "skipLibCheck": true // ignora verificação de tipo em arquivos .d.ts
+    }
+}

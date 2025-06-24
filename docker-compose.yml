@@ -1,0 +1,12 @@
+services:
+    postgres:
+        image: "bitnami/postgresql:latest"
+        container_name: postgresql
+
+        ports:
+            - "5432:5432"
+
+        environment:
+            POSTGRES_USER: postgres # Nome do usuário
+            POSTGRES_PASSWORD: postgres # Senha do banco
+            POSTGRES_DATABASE: rocketlog
